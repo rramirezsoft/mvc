@@ -1,0 +1,43 @@
+POST http://localhost:3000/api/tracks HTTP/1.1
+Content-Type: application/json
+
+{
+    "dato": "basura",
+    "name": "Ric",
+    "Album": "Album",
+    "cover": "http://tttt.com",
+    "artist": {
+        "name": "Ric",
+        "nickname": "rsurname",
+        "nationality": "ES"
+    },
+    "duration": {
+        "start": 1,
+        "end": 2
+    },
+    "mediaId": "0123456789abcdef01234567"
+}
+
+###
+POST http://localhost:3000/api/tracks HTTP/1.1
+Content-Type: application/json
+
+{
+    "dato": "otro datos",
+    "name": "Alan",
+    "Album": "SDFSDFD",
+    "cover": "http://teeet.com",
+    "artist": {
+        "name": "Alan",
+        "nickname": "pfff",
+        "nationality": "EN"
+    },
+    "duration": {
+        "start": 1,
+        "end": 20
+    },
+    "mediaId": "0123456789abcdef01234523"
+}
+
+###
+GET http://localhost:3000/api/tracks HTTP/1.1
