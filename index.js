@@ -8,6 +8,7 @@ const app = express()
 // Le decimos a la app de express() que use cors para evitar el error Cross-Domain (XD)
 app.use(cors())
 app.use(express.json())
+app.use(express.static('storage'))
 app.use("/api", require("./routes")) //Lee routes/index.js por defecto
 
 const port = process.env.PORT || 3000
